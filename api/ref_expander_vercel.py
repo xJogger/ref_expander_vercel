@@ -11,7 +11,7 @@ import re
 
 '''
 说明：
-将Mentor产生的压缩位号（U5-C10）粘贴到下面，运行之后输出未压缩的位号（U5,U6,U7,U8,U9,U10）
+将Mentor产生的压缩位号（U5-U10）粘贴到下面，运行之后输出未压缩的位号（U5,U6,U7,U8,U9,U10）
 '''
 
 # 自己程序
@@ -36,7 +36,7 @@ def expand_line(compressed_line):
 # 自己程序
 def task_func():
     set_env(title="Ref Expander")
-    put_markdown('本页面可以将压缩位号（U5-C10）转换为未压缩的位号（U5,U6,U7,U8,U9,U10）。')
+    put_markdown('本页面可以将压缩位号（U5-U10）转换为未压缩的位号（U5,U6,U7,U8,U9,U10）。')
     str2process = textarea('输入压缩位号：', rows=15, placeholder='可多行，行内逗号分割。')
     lines = str2process.split('\n')
     for i,line in enumerate(lines):
